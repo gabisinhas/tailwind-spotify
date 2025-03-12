@@ -1,1 +1,28 @@
 @import "tailwindcss";
+
+@theme {
+    --spacing-14:3.5rem;
+    --spacing-125px:125px;
+
+    --background-color-hover-green:#16a34a;
+    --background-color-purple-main:#2D46B9;
+    --background-color-green-main:#1ED760;
+    --text-color-green-main:#1ED760;
+    --text-color-purple-main:#2D46B9;
+    --font-size-9xl:9rem;
+}
+
+@layer utilities {
+    /* Background Images */
+    .bg-spotify-theme {
+        background-size: 175%;
+        background-image: url('/new-project/public/assets/bursts.svg');
+        background-position: 46% 4%;
+    }
+    .bg-spotify-theme-mobile {
+        background-image: url('/new-project/public/assets/bursts-mobile.svg');
+        background-position: top 25% center;
+        background-size: 195%;
+
+    }
+}
